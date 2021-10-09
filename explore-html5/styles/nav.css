@@ -1,0 +1,35 @@
+nav > ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+
+nav li:hover {
+    background: gainsboro;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: lightsalmon;
+    padding: 0;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+}
+
+.dropdown li {
+    padding: 0 20px;
+    margin: 0;
+}

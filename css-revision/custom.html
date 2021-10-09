@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root {
+            --dark-border: 2px solid black;
+            --main-color: salmon;
+            --border-color: lightgrey;   
+        }
+        h1 {
+            color: var(--main-color);
+        }
+        p {
+            color: var(--main-color);
+        }
+        h2 {
+            border: 2px solid var(--border-color);
+            color: var(--main-color);
+        }
+        footer {
+            border: var(--dark-border);
+            color: var(--main-color);
+        }
+    </style>  
+</head>
+<body>
+    <header>
+        <h1>Exploring Custom Properties</h1>
+        <p>Welcome</p>
+    </header>
+    <main>
+        <h2>My blah blah</h2>
+        <section>
+            <aside>aside nevigation</aside>
+            <div>
+                <h4>Blogs</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>copyright</small></p>
+    </footer>
+</body>
+</html>

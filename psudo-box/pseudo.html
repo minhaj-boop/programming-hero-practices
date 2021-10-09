@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: aquamarine;
+        }
+
+        h1:hover {
+            color: royalblue;
+            background-color: saddlebrown;
+            font-size: 40px;
+            border-radius: 20px;
+        }
+
+        .middle-input:focus {
+            color: seagreen;
+            font-weight: 700;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        li:first-child {
+            color: chocolate;
+        }
+
+        li:last-child {
+            color: crimson;
+        }
+
+        li:nth-child(2n) {
+            color: cornflowerblue;
+        }
+
+        h3::before {
+            content: 'Hello ';
+        }
+
+        .special::after {
+            content: 'Meow';
+            background-color: darkgoldenrod;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Normal case</h1>
+    <input type="text">
+    <input class="middle-input" type="text">
+    <input type="text">
+    <br>
+    <a href="https://google.com" target="_blank">google</a>
+    <a href="https://www.underconsideration.com/brandnew/" target="_blank">new site</a>
+    <a href="https://youtube.com" target="_blank">youtube</a>
+    <br>
+    <h3>dada-1</h3>
+    <h3 class="special">dada-2</h3>
+    <h3>dada-3</h3>
+    <h3>dada-4</h3>
+    <h3 class="special">dada-5</h3>
+    <h3>dada-6</h3>
+    <ul>
+        <li>Ayela</li>
+        <li>Wild</li>
+        <li>mew</li>
+        <li>pew</li>
+        <li>hol</li>
+        <li>no</li>
+    </ul>
+</body>
+</html>

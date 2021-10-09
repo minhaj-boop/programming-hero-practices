@@ -1,0 +1,30 @@
+.m-nav {
+  margin-bottom: 100px;
+}
+
+.panda-bg-info {
+  background-color: #fceae8;
+  border-radius: 10px;
+}
+.panda-cat-col {
+  color: #ffffff;
+}
+.panda-bag-bg {
+  background-color: #da70d6;
+}
+.panda-watch-bg {
+  background-color: #ffa500;
+}
+.panda-shoe-bg {
+  background-color: #0000ff;
+}
+.catagories img {
+  width: 100px;
+}
+.panda-buy-now-btn {
+  background-image: linear-gradient(to bottom, #ff589b 0%, #ff136f 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 9px 25px;
+  border: none;
+}
