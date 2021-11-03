@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #second-title {
+            background-color: coral;
+        } */
+        /* .blog {
+            border: 2px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <main>
+        <section id="blogs">
+            <header>
+               <h2>Blog List</h2>
+               <ul id="blog-list">
+                   <li>BLog-1</li>
+                   <li>BLog-2</li>
+                   <li>BLog-3</li>
+                   <li>BLog-4</li>
+               </ul> 
+            </header>
+            <article class="blog">
+                <h3>My Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum soluta ex nam veniam autem, vero odit dolor consectetur tempora quos eligendi animi similique cupiditate voluptas amet voluptatum itaque ullam quae!</p>
+            </article>
+            <article class="blog">
+                <h3 id="second-title">My Blog-2</h3>
+                <p>Saepe libero voluptatem necessitatibus culpa numquam voluptatum unde tenetur iste illum nam voluptatibus earum reprehenderit provident beatae, dolores labore? Ipsum deleniti hic quos optio sapiente adipisci molestias qui ab inventore.</p>
+            </article>
+            <article class="blog">
+                <h3 id="third-title">My Blog-3</h3>
+                <p>Eveniet vero laboriosam facere qui ipsa? Ullam, aperiam atque sint vero inventore nulla praesentium molestias magnam, incidunt voluptatum neque fugiat, adipisci ipsum? Voluptatum commodi similique, odio aliquid et labore eligendi!</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student =  {
+            name: 'kismot Ali',
+            age: 40
+        }
+        // console.log(document.body);
+        const blogTitles = document.getElementsByTagName('h3');
+        console.log(blogTitles);
+        for(const h3 of blogTitles) {
+            //console.log(h3.innerText);
+        }
+
+        // getElementByID
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+
+
+        //create and add element by JS
+        //create the element
+        const li = document.createElement('li');
+        li.innerText = 'Blog-5';
+        //where to add
+        const ul = document.getElementById('blog-list');
+        //append new element
+        ul.appendChild(li);
+
+        //add article
+        const article = document.createElement('article');
+        article.classList.add('blog');
+        // const h3 = document.createElement('h3');
+        // h3.innerText = 'My Blog-5';
+        // const p = document.createElement('p');
+        // p.innerText = 'Eveniet vero laboriosam facere qui ipsa? Ullam, aperiam atque sint vero inventore nulla praesentium molestias magnam, incidunt voluptatum neque fugiat, adipisci ipsum? Voluptatum commodi similique, odio aliquid et labore eligendi!';
+        // article.appendChild(h3);
+        // article.appendChild(p);
+        // //parent of atricle
+        article.innerHTML = `
+        <h3>My Blog-5</h3>
+        <p>Eveniet vero laboriosam facere qui ipsa? Ullam, aperiam atque sint vero inventore nulla praesentium molestias magnam, incidunt voluptatum neque fugiat, adipisci ipsum? Voluptatum commodi similique, odio aliquid et labore eligendi!</p>
+        `
+        const blogSection = document.getElementById('blogs');
+        blogSection.appendChild(article);
+
+        // getElementsByClassName
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '10px';
+        }
+    </script>
+</body>
+</html>
