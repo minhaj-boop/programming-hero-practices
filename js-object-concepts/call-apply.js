@@ -4,7 +4,7 @@ const kibria = {
     name: 'RJ Kibria',
     treatDey: function (expense, boksis, tax) {
         this.money = this.money - expense - boksis - tax;
-        console.log('here5555', this);
+        // console.log('here5555', this);
         return this.money;
     }
 }
